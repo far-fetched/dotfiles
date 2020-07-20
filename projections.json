@@ -1,0 +1,53 @@
+{
+  "app/models/*.js": {
+    "type": "model",
+    "alternate": "tests/unit/models/{}-test.js"
+  },
+  "app/services/*.js": {
+    "type": "service",
+    "alternate": "tests/unit/services/{}-test.js"
+  },
+  "app/adapters/*.js": {
+    "type": "adapter",
+    "alternate": "tests/unit/adapters/{}-test.js"
+  },
+  "app/serializers/*.js": {
+    "type": "serializer",
+    "alternate": "tests/unit/serializers/{}-test.js"
+  },
+  "app/abilities/*.js": {
+    "type": "ability",
+    "alternate": "tests/unit/abilities/{}-test.js"
+  },
+  "app/utils/*.js": {
+    "type": "util",
+    "alternate": "tests/unit/utils/{}-test.js"
+  },
+  "app/controllers/*.js": {
+    "type": "controller",
+    "alternate": "tests/unit/controllers/{}-test.js",
+    "related": ["app/templates/{}.hbs", "app/routes/{}.hbs"]
+  },
+  "app/routes/*.js": {
+    "type": "route",
+    "alternate": "tests/unit/routes/{}-test.js",
+    "related": ["app/controllers/{}.js", "app/templates/{}.hbs"]
+  },
+  "app/components/*.js": {
+    "type": "component",
+    "related": "app/templates/components/{}.hbs",
+    "alternate": "tests/integration/components/{}-test.js"
+  },
+  "app/templates/*.hbs": {
+    "type": "template",
+    "related": ["app/controllers/{}.js", "app/{}.js"]
+  },
+  "tests/unit/*-test.js": {
+    "type": "test",
+    "alternate": "app/{}.js"
+  },
+  "tests/integration/*-test.js": {
+    "type": "test",
+    "alternate": "app/{}.js"
+  }
+}
