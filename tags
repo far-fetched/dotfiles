@@ -1,0 +1,44 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+/	init.vim	/^nnoremap \/ \/\\v$/;"	m
+/	init.vim	/^vnoremap \/ \/\\v$/;"	m
+<F1>	init.vim	/^inoremap <F1> <ESC>:set invfullscreen<CR>a$/;"	m
+<F1>	init.vim	/^nnoremap <F1> :set invfullscreen<CR>$/;"	m
+<F1>	init.vim	/^vnoremap <F1> :set invfullscreen<CR>$/;"	m
+<S-Left>	init.vim	/^nnoremap <silent> <S-Left> :call CocAction('diagnosticPrevious')<CR>$/;"	m
+<S-Right>	init.vim	/^nnoremap <silent> <S-Right> :call CocAction('diagnosticNext')<CR>$/;"	m
+<S-TAB>	init.vim	/^inoremap <expr><S-TAB> pumvisible() ? "\\<C-p>" : "\\<C-h>"$/;"	m
+<TAB>	init.vim	/^inoremap <silent><expr> <TAB>$/;"	m
+<leader><space>	init.vim	/^map <leader><space> :let @\/=''<cr> " clear search$/;"	m
+<leader>ev	init.vim	/^nnoremap <leader>ev :vsp $MYVIMRC<CR> " type,evto edit the Vimrc$/;"	m
+<leader>f	init.vim	/^nmap <leader>f <Plug>FocusModeToggle$/;"	m
+<leader>l	init.vim	/^map <leader>l :set list!<CR> " Toggle tabs and EOL$/;"	m
+<leader>q	init.vim	/^map <leader>q gqip$/;"	m
+check_back_space	init.vim	/^function! s:check_back_space() abort$/;"	f
+g:EasyGrepCommand	init.vim	/^let g:EasyGrepCommand="grep"$/;"	v
+g:EasyGrepFilesToExclude	init.vim	/^let g:EasyGrepFilesToExclude = "vendor,tmp,node_modules,.idea,bower_components,dist,recordings,temp-tests,tags"$/;"	v
+g:EasyGrepRecursive	init.vim	/^let g:EasyGrepRecursive = 1$/;"	v
+g:EasyGrepRoot	init.vim	/^let g:EasyGrepRoot="repository"$/;"	v
+g:EasyGrepSearchCurrentBufferDir	init.vim	/^let g:EasyGrepSearchCurrentBufferDir = 0$/;"	v
+g:airline#extensions#tabline#enabled	init.vim	/^let g:airline#extensions#tabline#enabled = 1$/;"	v
+g:airline#extensions#tabline#formatter	init.vim	/^let g:airline#extensions#tabline#formatter = 'unique_tail'$/;"	v
+g:airline#extensions#tabline#show_buffers	init.vim	/^let g:airline#extensions#tabline#show_buffers = 0$/;"	v
+g:airline#extensions#tabline#show_tabs	init.vim	/^let g:airline#extensions#tabline#show_tabs = 1$/;"	v
+g:airline_solarized_bg	init.vim	/^let g:airline_solarized_bg='dark'$/;"	v
+g:coc_global_extensions	init.vim	/^let g:coc_global_extensions = [$/;"	v
+g:focus_use_default_mapping	init.vim	/^let g:focus_use_default_mapping = 0$/;"	v
+g:mustache_abbreviations	init.vim	/^let g:mustache_abbreviations = 1$/;"	v
+g:solarized_termcolors	init.vim	/^let g:solarized_termcolors=256$/;"	v
+g:solarized_termtrans	init.vim	/^let g:solarized_termtrans=1$/;"	v
+g:startify_bookmarks	init.vim	/^let g:startify_bookmarks = [ {'c': '~\/.vimrc'} ]$/;"	v
+g:vim_javascript_imports_map	init.vim	/^let g:vim_javascript_imports_map = '<Leader>e'$/;"	v
+gd	init.vim	/^nmap <silent> gd <Plug>(coc-definition)$/;"	m
+gi	init.vim	/^nmap <silent> gi <Plug>(coc-implementation)$/;"	m
+gr	init.vim	/^nmap <silent> gr <Plug>(coc-references)$/;"	m
+gy	init.vim	/^nmap <silent> gy <Plug>(coc-type-definition)$/;"	m
+j	init.vim	/^nnoremap j gj$/;"	m
+k	init.vim	/^nnoremap k gk$/;"	m
