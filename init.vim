@@ -2,7 +2,6 @@ call plug#begin()
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-"Plug 'dkprice/vim-easygrep'
 Plug 'mhinz/vim-grepper'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'pangloss/vim-javascript'
@@ -26,7 +25,7 @@ Plug 'elixir-editors/vim-elixir'
 
 call plug#end()
 
-"grepper
+" grepper
 xmap gs <plug>(GrepperOperator)
 nnoremap <leader>gs :Grepper -tool git<cr>
 nnoremap <leader>gb :Grepper -tool git -buffer -noopen<cr>
@@ -66,12 +65,6 @@ set foldlevelstart=99 "start file with all folds opened
 
 " highlight partial search
 set hlsearch
-
-" Grep exclude
-"let g:EasyGrepFilesToExclude = "vendor,tmp,node_modules,.idea,bower_components,dist,recordings,temp-tests,tags,tags.temp"
-"let g:EasyGrepCommand="grep"
-"let g:EasyGrepRoot="repository"
-"let g:EasyGrepRecursive = 1
 
 " Import js
 let g:vim_javascript_imports_map = '<Leader>e'
