@@ -106,7 +106,7 @@ let g:ale_elixir_elixir_ls_release = expand("/home/pjoter/Dokumenty/elixir/elixi
 " Optional, you can disable Dialyzer with this setting
 let g:ale_elixir_elixir_ls_config = {'elixirLS': {'dialyzerEnabled': v:false}}
 " Optional, configure as-you-type completions
-set completeopt=menu,menuone,preview,noselect,noinsert
+set completeopt=menu,menuone,popup,noselect,noinsert
 let g:ale_completion_enabled = 1
 
 " github open
@@ -129,3 +129,4 @@ set showcmd
 "set swap files directory
 set swapfile
 set dir=~/tmp
+
